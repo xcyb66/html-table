@@ -28,6 +28,10 @@
     </style>
 </head>
 <body>
+<p>
+        These tables summarize the yearly LDA results (2018–2024), showing how smartphone companies are distributed across different topic groups under varying topics counts.
+</p>        
+        
 <table border="1" cellspacing="0" cellpadding="4">
   <caption>Table 1 – Summary of 2018 LDA Results</caption>
   <tr>
@@ -40,21 +44,21 @@
     <td>-</td>
     <td>HH, A, S</td>
     <td>HH, A, S</td>
-    <td style="background-color: rgba(0,128,0,0.3)">A, S</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
+    <td>A, S</td>
+    <td>A</td>
     <td>O</td>
     <td>ov</td>
   </tr>
   <tr>
     <td>Topic 4</td>
     <td>-</td><td>-</td><td>ov</td><td>A</td><td>S</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
+    <td>A</td>
     <td>O</td>
   </tr>
   <tr>
     <td>Topic 5</td>
     <td>-</td><td>-</td><td>-</td><td>O</td><td>O</td><td>O</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
+    <td>A</td>
   </tr>
   <tr><td>Topic 6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>O</td><td>S</td><td>HH</td></tr>
   <tr><td>Topic 7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>O</td><td>O</td></tr>
@@ -65,26 +69,6 @@
   HH: HUAWEI/HONOR; A: Apple; S: Samsung; ov: OPPO/vivo; X: Xiaomi; O: Others.
 </p>
 
-<p style="font-size: 0.95em; margin-top: 1em;">
-  To illustrate the computation of the relative degree of competition 
-  (<i>C<sub>i(j)</sub></i>) using Equation (2), consider the relationship between Apple and Samsung. 
-  As shown in Table 3, these two brands first appeared together 
-  <span style="background-color: rgba(0,128,0,0.3);">in the cell highlighted in green</span> 
-  as a competitive cluster when the topic count was reduced from 8 to 5, 
-  which resulted in <i>t<sub>AS</sub> = 5</i>. 
-  Samsung was the first competitor to appear alongside Apple, which had not previously belonged to 
-  any competitive cluster until the topic count was reduced to 5 
-  (<span style="background-color: rgba(255,0,0,0.15);">Apple appeared alone in higher topic counts 
-  as shown in the red-highlighted cells</span>). 
-  This result indicates that Apple had no competitors included in any cluster prior to this point, 
-  making Samsung its first competitor, resulting in a rank value of 
-  <i>r<sub>A(S)</sub> = 1</i>. 
-  Furthermore, in this competitive cluster, only two brands (Apple and Samsung) were present, 
-  so <i>n<sub>AS</sub> = 0</i>. 
-  Based on the formula, Apple’s relative degree of competition with Samsung was thus calculated as 
-  <i>C<sub>A(S)</sub> = t<sub>AS</sub> − r<sub>A(S)</sub> − n<sub>AS</sub> = 5 − 1 − 0 = 4</i>. 
-  Similarly, competition scores with other brands were computed following the same procedure.
-</p>
 
 <table border="1" cellspacing="0" cellpadding="4">
   <caption>Table 2 – Summary of 2019 LDA Results</caption>
@@ -94,39 +78,39 @@
   <tr>
     <td>Topic 1</td>
     <td>HH, A, S, ov</td><td>A, S</td><td>A, S</td><td>A, S</td><td>A, S</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
+    <td>A</td>
+    <td>A</td>
+    <td>A</td>
   </tr>
   <tr>
     <td>Topic 2</td>
     <td>A, X</td><td>HH, ov</td><td>HH, ov</td><td>A, ov, X</td>
-    <td style="background-color: rgba(0,128,0,0.3)">A, ov, X</td>
-    <td style="background-color: rgba(0,123,167,0.15)">ov, X</td>
-    <td style="background-color: rgba(255,0,0,0.15)">A</td>
+    <td>A, ov, X</td>
+    <td>ov, X</td>
+    <td>A</td>
     <td>HH</td>
   </tr>
   <tr>
     <td>Topic 3</td>
     <td>-</td><td>X</td><td>X</td><td>O</td><td>HH, A</td><td>S</td>
-    <td style="background-color: rgba(0,123,167,0.15)">ov, X</td>
+    <td>ov, X</td>
     <td>O</td>
   </tr>
   <tr>
     <td>Topic 4</td>
     <td>-</td><td>-</td><td>O</td><td>O</td><td>X</td><td>HH</td><td>S</td>
-    <td style="background-color: rgba(0,123,167,0.15)">X</td>
+    <td>X</td>
   </tr>
   <tr>
     <td>Topic 5</td>
     <td>-</td><td>-</td><td>-</td><td>HH</td><td>O</td>
-    <td style="background-color: rgba(0,123,167,0.15)">X</td>
+    <td>X</td>
     <td>HH</td><td>S</td>
   </tr>
   <tr>
     <td>Topic 6</td>
     <td>-</td><td>-</td><td>-</td><td>-</td><td>O</td><td>O</td>
-    <td style="background-color: rgba(0,123,167,0.15)">X</td>
+    <td>X</td>
     <td>ov</td>
   </tr>
   <tr><td>Topic 7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>O</td><td>O</td><td>O</td></tr>
@@ -135,33 +119,8 @@
 </table>
 
 <p><i>HH: HUAWEI/HONOR; A: Apple; S: Samsung; ov: OPPO/vivo; X: Xiaomi; O: Others.</i></p>
-<p style="font-size: 0.95em; margin-top: 1em;">
-  As a demonstration of the relative degree of competition computation, let us examine the relationship 
-  between Apple and Xiaomi. According to Table 4, these two brands first co-occurred in a competitive 
-  cluster when the topic count was reduced from 9 to 6 
-  (<span style="background-color: rgba(0,128,0,0.3);">cell highlighted in green</span>), 
-  which sets <i>t<sub>AX</sub> = 6</i>. 
-  Apple's competition with any other competitor did not appear until the topic count reached 6, 
-  implying that Xiaomi is its first competitor 
-  (<span style="background-color: rgba(255,0,0,0.15);">as shown in the red-highlighted cells</span>, 
-  Apple appears without any competitor before the topic count 6); therefore, the ranking value 
-  <i>r<sub>A(X)</sub> = 1</i> is assigned. 
-  In this joint cluster (<span style="background-color: rgba(0,128,0,0.3);">highlighted in green</span>), 
-  there was one additional brand, OPPO/vivo, so <i>n<sub>AX</sub> = 1</i>. 
-  Applying the formula, Apple’s relative degree of competition with Xiaomi is calculated as 
-  <i>C<sub>A(X)</sub> = t<sub>AX</sub> − r<sub>A(X)</sub> − n<sub>AX</sub> = 6 − 1 − 1 = 4</i>.  
-</p>
-<p style="font-size: 0.95em;">
-  From Xiaomi’s perspective, Apple appears as the second competitor, following OPPO/vivo 
-  (<span style="background-color: rgba(0,123,167,0.15);">as shown in the blue-highlighted cells</span>, 
-  marked only for Xiaomi’s presence with topic counts above 6, Xiaomi co-occurs with a single competitor, 
-  OPPO/vivo, at topic count 8 and 7), assigning a rank value <i>r<sub>X(A)</sub> = 2</i>. 
-  As already found with <i>n<sub>AX</sub> = 1</i>, their shared cluster includes one additional brand, 
-  OPPO/vivo (<span style="background-color: rgba(0,128,0,0.3);">colored in green</span>), thus 
-  <i>n<sub>XA</sub> = n<sub>AX</sub> = 1</i>. Therefore, Xiaomi’s relative degree of competition with Apple 
-  is given by <i>C<sub>X(A)</sub> = t<sub>XA</sub> − r<sub>X(A)</sub> − n<sub>XA</sub> = 6 − 2 − 1 = 3</i>, 
-  highlighting an asymmetric competitive relationship.
-</p>
+
+
 
 <table>
 <caption>Table 3 – Summary of 2020 LDA Results</caption>
